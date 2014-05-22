@@ -1,6 +1,7 @@
 {
 	"name": "abfhp/abfhp",
 	"description": "A _____ For Horrible People",
+	"license": "MIT",
 	"require": {
 		"php": "~5.3.13",
 		"laravel/framework": "4.1.*"
