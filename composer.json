@@ -1,9 +1,22 @@
 {
 	"name": "abfhp/abfhp",
 	"description": "A _____ For Horrible People",
+	"keywords": ["cards", "against", "humanity", "online", "game"],
 	"license": "MIT",
+	"authors": [
+		{
+			"name": "David Myers",
+			"email": "davidrmyersii@gmail.com"
+		},
+		{
+			"name": "Zackary Lowery"
+		}
+	],
 	"require": {
 		"php": "~5.3.13",
 		"laravel/framework": "4.1.*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "3.7.*"
 	}
 }
