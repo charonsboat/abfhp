@@ -15,7 +15,7 @@
 	"require": {
 		"php": "~5.3.13",
 		"laravel/framework": "4.1.*",
-		"abfhp/library": "*"
+		"abfhp/library": "dev-master"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "3.7.*"
