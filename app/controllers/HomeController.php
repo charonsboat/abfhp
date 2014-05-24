@@ -1,7 +1,6 @@
 <?php
 
 class HomeController extends BaseController {
-
 	/**
 	 * To access this controller, simply add the route.
 	 * E.g. Route::get('/', 'HomeController@showWelcome');
@@ -9,8 +8,9 @@ class HomeController extends BaseController {
 	public function showWelcome()
 	{
 		$this->layout->title = 'Home';
+		$this->layout->main = View::make('index');
 
-		return $this->layout->nest('main', 'index');
+		return $this->layout;
 	}
 
 }
