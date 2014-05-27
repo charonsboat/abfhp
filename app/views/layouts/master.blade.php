@@ -11,17 +11,17 @@
 <body>
 	<header>
 		<h1>A _____ For Horrible People</h1>
-		<!-- <nav id="site-navigation">
+		<nav>
 			<ul>
-				<li></li>
+				<li>{{ HTML::link('/game', 'Play Game') }}</li>
 			</ul>
-		</nav> -->
+		</nav>
 	</header>
 	<main>
 		@yield('main')
 	</main>
 	<footer>
-
+		<p>Based on, but neither affiliated with, nor endorsed by {{ HTML::link('http://cardsagainsthumanity.com', 'Cards Against Humanity&trade;') }}</p>
 	</footer>
 	{{ HTML::script('/assets/js/main.js') }}
 	{{ $customJs or null }}
