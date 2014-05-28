@@ -10,7 +10,7 @@
 </head>
 <body>
 	<header>
-		<h1>A _____ For Horrible People</h1>
+		<h1>{{ HTML::link('/dev', 'A _____ For Horrible People') }}</h1>
 		<nav>
 			<ul>
 				<li>{{ HTML::link('/game', 'Play Game') }}</li>
