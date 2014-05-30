@@ -13,7 +13,7 @@
 		}
 	],
 	"require": {
-		"php": "~5.3.13",
+		"php": ">=5.3.13",
 		"laravel/framework": "4.1.*",
 		"abfhp/horrible": "~0.0.1"
 	},
