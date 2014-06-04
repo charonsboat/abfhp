@@ -23,6 +23,7 @@
 	<footer>
 		<p>Based on, but neither affiliated with, nor endorsed by {{ HTML::link('http://cardsagainsthumanity.com', 'Cards Against Humanity&trade;') }}</p>
 	</footer>
+	{{ HTML::script('/assets/js/jquery-1.11.1.min.js') }}
 	{{ HTML::script('/assets/js/main.js') }}
 	{{ $customJs or null }}
 </body>

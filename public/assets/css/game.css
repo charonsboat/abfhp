@@ -1,0 +1,15 @@
+.card
+{
+	height: 15.5rem;
+	width: 11rem;
+}
+
+.black
+{
+	background-color: #000;
+}
+
+.white
+{
+	background-color: #fff;
+}
