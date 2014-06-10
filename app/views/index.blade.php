@@ -11,11 +11,11 @@
 </section>
 
 <section id="game-preview">
-	<h2>Test Preview Section</h2>
+	<!-- <h2>Test Preview Section</h2>
 
 	<p>Once I have time, this will be a simple animation showing how the game 
 	works. It will load a random default set of black and white cards to loop 
-	through. Every time the page refreshes, it will grab a new random set.</p>
+	through. Every time the page refreshes, it will grab a new random set.</p> -->
 </section>
 
 @stop

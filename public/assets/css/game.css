@@ -1,15 +1,25 @@
 .card
 {
-	height: 15.5rem;
-	width: 11rem;
+	border-radius: 0.5em;
+	box-shadow: 0 0 0.313em #666;
+	height: 15.5em;
+	padding: 0.5em;
+	width: 11em;
 }
+	.card > p
+	{
+		font-size: 1em;
+		margin: 0;
+	}
 
 .black
 {
 	background-color: #000;
+	color: #fff;
 }
 
 .white
 {
 	background-color: #fff;
+	color: #000;
 }

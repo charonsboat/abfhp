@@ -1,6 +1,7 @@
 html, body
 {
 	height: 100%;
+	font-size: 100%;
 }
 
 body
@@ -71,5 +72,11 @@ h2
 
 #game-preview
 {
+	display: flex;
 	float: right;
+	justify-content: flex-start;
 }
+	#game-preview .card
+	{
+		margin-right: 0.5em;
+	}
