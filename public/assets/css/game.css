@@ -1,14 +1,21 @@
+body > main
+{
+	overflow: hidden;
+}
+
 .card
 {
 	border-radius: 0.5em;
 	box-shadow: 0 0 0.313em #666;
+	font-size: 1em;
+	font-weight: bold;
 	height: 15.5em;
 	padding: 0.5em;
 	width: 11em;
+	z-index: 2000;
 }
 	.card > p
 	{
-		font-size: 1em;
 		margin: 0;
 	}
 

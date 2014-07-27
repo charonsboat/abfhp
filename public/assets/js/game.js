@@ -1,7 +1,34 @@
+var Board = function (boardSelector)
+{
+	var board = $(boardSelector);
+	var self = this;
+	var frame, height, id, width;
+
+	this.getHeight = function ()
+	{
+		return height;
+	}
+
+	this.getWidth = function ()
+	{
+		return width;
+	}
+
+	this.setHeight = function (newHeight)
+	{
+		board = newHeight;
+	}
+
+	this.setWidth = function (newWidth)
+	{
+		width = newWidth;
+	}
+}
+
 var Card = function ()
 {
-	var frame;
 	var self = this;
+	var frame;
 
 	this.id;
 	this.type;
@@ -13,12 +40,32 @@ var Card = function ()
 		frame.addClass('card');
 		frame.addClass(self.type);
 
+		frame.css({
+			'left' : -1000,
+			'position' : 'absolute',
+			'top' : 500
+		});
+
 		frame.prepend('<p>' + self.text + '</p>');
 	}
 
 	this.DrawTo = function (board)
 	{
 		frame.appendTo(board);
+	}
+
+	this.MoveTo = function (x, y, speed)
+	{
+		if (speed === 'undefined')
+		{
+			speed = 500;
+		}
+
+		frame.animate(
+		{
+			left: x,
+			top: y
+		}, speed);
 	}
 }
 

@@ -1,27 +1,20 @@
 var PreviewGame = function (boardSelector)
 {
 	var self = this;
-
-	var board;
-	var blackCards;
-	var whiteCards;
-
-	var cards = 'testing';
+	var blackCards, board, cards, whiteCards;
 
 	var DrawBlackCard = function ()
 	{
 		var newBlackCard = new BlackCard();
-		var randomBlackCard = _.sample(blackCards, 1);
+		var randomBlackCard = _.sample(blackCards);
 
-		newBlackCard.id = randomBlackCard[0].id;
+		newBlackCard.id = randomBlackCard.id;
 		newBlackCard.type = 'black';
-		newBlackCard.numberOfAnswers = randomBlackCard[0].numAnswers;
-		newBlackCard.text = randomBlackCard[0].text.replace(/_/g, '_____');
+		newBlackCard.numberOfAnswers = randomBlackCard.numAnswers;
+		newBlackCard.text = randomBlackCard.text.replace(/_/g, '_____');
 
 		newBlackCard.Build();
 		newBlackCard.DrawTo(board);
-
-		console.log(newBlackCard);
 
 		return newBlackCard;
 	}
@@ -29,11 +22,11 @@ var PreviewGame = function (boardSelector)
 	var DrawWhiteCard = function ()
 	{
 		var newWhiteCard = new WhiteCard();
-		var randomWhiteCard = _.sample(whiteCards, 1);
+		var randomWhiteCard = _.sample(whiteCards);
 
-		newWhiteCard.id = randomWhiteCard[0].id;
+		newWhiteCard.id = randomWhiteCard.id;
 		newWhiteCard.type = 'white';
-		newWhiteCard.text = randomWhiteCard[0].text;
+		newWhiteCard.text = randomWhiteCard.text;
 
 		newWhiteCard.Build();
 		newWhiteCard.DrawTo(board);
@@ -45,9 +38,13 @@ var PreviewGame = function (boardSelector)
 	{
 		var blackCard = DrawBlackCard();
 
+		blackCard.MoveTo(0, 0, 250);
+
 		for (var i = 0; i < blackCard.numberOfAnswers; ++i)
 		{
-			DrawWhiteCard();
+			var whiteCard = DrawWhiteCard();
+
+			whiteCard.MoveTo((12.5 * (i+1)) + 'em', 0, 500 + (250 * i));
 		}
 	}
 
@@ -59,7 +56,15 @@ var PreviewGame = function (boardSelector)
 		{
 			cards = response;
 
-			blackCards = _.where(cards, { 'cardType' : 'Q' });
+			blackCards = _.filter(cards, function (card)
+			{
+				if (card.cardType == 'Q' && (card.numAnswers == 1 || card.numAnswers == 2))
+					return true;
+				else
+					return false;
+			});
+
+			// blackCards = _.where(cards, { 'cardType' : 'Q' });
 			whiteCards = _.where(cards, { 'cardType' : 'A' });
 
 			DrawCards();
@@ -69,11 +74,6 @@ var PreviewGame = function (boardSelector)
 
 $(document).ready(function ()
 {
-	// var blackCard = new BlackCard();
-
-	// blackCard.Build();
-	// blackCard.DrawTo(board);
-
 	var Preview = new PreviewGame('#game-preview');
 	Preview.Init();
 });
