@@ -5,8 +5,8 @@ body > main
 
 .card
 {
+	border: 1px solid #000;
 	border-radius: 0.5em;
-	box-shadow: 0 0 0.313em #666;
 	font-size: 1em;
 	font-weight: bold;
 	height: 15.5em;

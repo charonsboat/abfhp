@@ -10,8 +10,8 @@ class HomeController extends BaseController {
 		$this->layout->title = 'Home';
 		$this->layout->main = View::make('index');
 
-		$this->layout->customCss = HTML::style('/assets/css/game.css');
-		$this->layout->customJs = HTML::script('/assets/js/game.js');
+		$this->layout->customCss = HTML::style('assets/css/game.css');
+		$this->layout->customJs = HTML::script('assets/js/game.js');
 
 		return $this->layout;
 	}

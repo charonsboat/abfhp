@@ -6,6 +6,8 @@ html, body
 
 body
 {
+	/*background: url('../images/tile-hexagon.png');*/
+	background-color: #fff;
 	color: #232323;
 	font-family: 'helvetica neue', helvetica, arial, sans-serif;
 }
@@ -13,19 +15,58 @@ body
 body > header, body > footer
 {
 	background-color: #232323;
+	/*background-color: rgba(0, 0, 0, 0.5);*/
 	color: #fff;
-	display: flex;
-		align-items: center;
 	height: 3rem;
 	padding: 0 1rem;
 	width: calc(100% - 2rem);
 	z-index: 9999;
 }
 
-body > header
+body > header > div, body > footer > div
 {
+	align-items: center;
+	display: flex;
 	justify-content: space-between;
-	text-align: left;
+	min-height: 100%;
+}
+
+body > header h1
+{
+	font-size: 1.5rem;
+	margin: 0 1rem;
+}
+	body > header h1 a
+	{
+		letter-spacing: -0.0625rem;
+	}
+
+body > header > nav
+{
+	height: 0;
+	margin: 0 1rem;
+	opacity: 0;
+	overflow: hidden;
+	text-align: center;
+}
+	body > header > nav ul
+	{
+		margin-bottom: 1rem;
+	}
+	body > header > nav a
+	{
+		background-color: #312d2a;
+		display: block;
+		height: 2.5rem;
+		letter-spacing: 0.125rem;
+		line-height: 2.5rem;
+		margin-bottom: 0.5rem;
+		text-transform: lowercase;
+	}
+
+body > header .menu-icon
+{
+	margin: 0 1rem;
 }
 
 body > footer
@@ -36,8 +77,6 @@ body > footer
 
 body > main
 {
-	display: flex;
-	justify-content: space-between;
 	min-height: calc(100% - 8rem);
 	padding: 1rem;
 	z-index: 1000;
@@ -53,6 +92,11 @@ body > main
 		margin: 0 0 0.5rem 0.5rem;
 	}
 
+h1, h2, h3, h4, h5, h6
+{
+	font-weight: normal;
+}
+
 h1
 {
 	font-size: 1.5rem;
@@ -66,11 +110,48 @@ h2
 
 #game-description
 {
-	width: 45%;
+	width: 100%;
 }
 
 #game-preview
 {
 	position: relative;
-	width: 50%;
+	width: 100%;
+}
+
+.menu-icon
+{
+	height: 1.25rem;
+	width: 1.4rem;
+}
+	.menu-icon:hover
+	{
+		cursor: pointer;
+	}
+	.menu-icon div
+	{
+		background-color: #fff;
+		height: 0.25rem
+	}
+	.menu-icon div:first-child, .menu-icon div.first-child
+	{
+		margin-bottom: 0.25rem;
+	}
+	.menu-icon div:last-child, .menu-icon div.last-child
+	{
+		margin-top: 0.25rem;
+	}
+
+@media (max-width: 600px)
+{
+	body > header
+	{
+		padding: 0;
+		width: 100%;
+	}
+
+	body > header h1
+	{
+		
+	}
 }
