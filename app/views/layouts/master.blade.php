@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no">
 	<title>A _____ For Horrible People{{{ isset($title) ? ' | '.$title : null }}}</title>
 
 	{{ HTML::style('assets/css/reset.css') }}
