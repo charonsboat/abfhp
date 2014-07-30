@@ -10,7 +10,7 @@
 </head>
 <body>
 	<header>
-		<div>
+		<div class="head">
 			<h1>{{ HTML::link('dev', 'A _____ For Horrible People') }}</h1>
 			<div class="menu-icon">
 				<div></div>
@@ -25,17 +25,19 @@
 				<li>{{ HTML::link('log-in', 'Log In') }}</li>
 			</ul>
 		</nav>
+		<div class="divider"></div>
 	</header>
 	<main>
 		@yield('main')
 	</main>
 	<footer>
-		<div>
+		<div class="foot">
 			<p>Based on, but neither affiliated with, nor endorsed by {{ HTML::link('http://cardsagainsthumanity.com', 'Cards Against Humanity&trade;') }}</p>
 		</div>
 	</footer>
 	{{ HTML::script('assets/js/lib/jquery-2.1.1.min.js') }}
 	{{ HTML::script('assets/js/lib/underscore-1.6.0.min.js') }}
+	{{ HTML::script('assets/js/plugins.js') }}
 	{{ HTML::script('assets/js/main.js') }}
 	{{ $customJs or null }}
 </body>

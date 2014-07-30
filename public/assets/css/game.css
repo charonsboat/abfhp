@@ -5,13 +5,13 @@ body > main
 
 .card
 {
-	border: 1px solid #000;
-	border-radius: 0.5em;
-	font-size: 1em;
+	border-radius: 0.25rem;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.22);
+	font-size: 1rem;
 	font-weight: bold;
-	height: 15.5em;
-	padding: 0.5em;
-	width: 11em;
+	height: 16rem;
+	padding: 0.5rem;
+	width: 11rem;
 	z-index: 2000;
 }
 	.card > p

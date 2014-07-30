@@ -5,21 +5,21 @@
 	<title>A _____ For Horrible People</title>
 	<style>
 		body {
-			margin:0;
-			font-family: 'helvetica neue', helvetica, sans-serif;;
-			text-align:center;
 			color: #ccc;
+			font-family: 'helvetica neue', helvetica, sans-serif;
+			margin: 0;
 		}
 
 		.ive-got-a-phd-in-horribleness {
-			width: 500px;
-			height: 100px;
 			position: absolute;
-			left: 50%;
-			top: 50%;
-			margin-left: -250px;
-			margin-top: -50px;
+			text-align: center;
+			top: 40%;
+			width: 100%;
 		}
+			.ive-got-a-phd-in-horribleness h1
+			{
+				font-weight: normal;
+			}
 	</style>
 </head>
 <body>
