@@ -120,6 +120,7 @@ h2
 
 #game-preview
 {
+	max-width: 30rem;
 	position: relative;
 	width: 100%;
 }

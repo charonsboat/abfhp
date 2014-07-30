@@ -3,18 +3,29 @@ body > main
 	overflow: hidden;
 }
 
+/* This is what will allow the cards to maintain the correct aspect ratio. */
 .card
 {
 	border-radius: 0.25rem;
 	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.22);
+	height: 0;
+	padding-bottom: 60%;
+	position: relative;
+	width: 40%;
+}
+
+.card-content-wrapper
+{
+	bottom: 0;
 	font-size: 1rem;
 	font-weight: bold;
-	height: 16rem;
+	left: 0;
 	padding: 0.5rem;
-	width: 11rem;
-	z-index: 2000;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
-	.card > p
+	.card p
 	{
 		margin: 0;
 	}

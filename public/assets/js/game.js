@@ -46,7 +46,11 @@ var Card = function ()
 			'top' : 500
 		});
 
-		frame.prepend('<p>' + self.text + '</p>');
+		var content = $(document.createElement('div'));
+		content.addClass('card-content-wrapper');
+
+		content.prepend('<p>' + self.text + '</p>');
+		frame.prepend(content);
 	}
 
 	this.DrawTo = function (board)
