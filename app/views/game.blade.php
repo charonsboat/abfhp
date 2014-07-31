@@ -1,5 +1,72 @@
 @section('main')
 
-<p>testing</p>
+<div class="board">
+	<div class="in-play">
+		<div class="question">
+			<div class="card black">
+				<div class="foundation">
+					<div class="contents constraint-filler">
+						<p>What is your worst fear?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="answers">
+			<div class="constraint-filler">
+				<div class="card white">
+					<div class="foundation">
+						<div class="contents constraint-filler">
+							<p>A snapping turtle biting the tip of your penis.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card white">
+					<div class="foundation">
+						<div class="contents constraint-filler">
+							<p>See former.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card white">
+					<div class="foundation">
+						<div class="contents constraint-filler">
+							<p>See former.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="in-hand">
+		<div class="card white">
+			<div class="foundation">
+				<div class="contents constraint-filler">
+					<p>See former.</p>
+				</div>
+			</div>
+		</div>
+		<div class="card white">
+			<div class="foundation">
+				<div class="contents constraint-filler">
+					<p>See former.</p>
+				</div>
+			</div>
+		</div>
+		<div class="card white">
+			<div class="foundation">
+				<div class="contents constraint-filler">
+					<p>See former.</p>
+				</div>
+			</div>
+		</div>
+		<div class="card white">
+			<div class="foundation">
+				<div class="contents constraint-filler">
+					<p>See former.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 @stop

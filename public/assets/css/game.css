@@ -1,10 +1,112 @@
-body > main
+.constraint-filler
 {
-	overflow: hidden;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
-/* This is what will allow the cards to maintain the correct aspect ratio. */
+.board
+{
+	margin: auto;
+	max-width: 40rem;
+	padding: 0;
+	width: 100%;
+}
+
+.board .in-play
+{
+	width: 100%;
+}
+	.board .in-play .question
+	{
+		display: inline-block;
+		margin: 0 -4px 0 0;
+		vertical-align: top;
+		width: 55%;
+	}
+	.board .in-play .answers
+	{
+		display: inline-block;
+		height: 0;
+		margin: 0 -4px 0 0;
+		padding: 0 0 82.5% 0;
+		position: relative;
+		vertical-align: top;
+		width: 45%;
+	}
+		.board .in-play .answers .constraint-filler
+		{
+			overflow: auto;
+		}
+
+.board .in-hand
+{
+	min-width: 100%;
+	overflow-y: hidden;
+	overflow-x: auto;
+	position: relative;
+	white-space: nowrap;
+	width: 100%;
+}
+	.board .in-hand .card
+	{
+		display: inline-block;
+		width: 33.3%;
+	}
+
+
+
+
+
+
+
 .card
+{
+	margin: 0;
+	padding: 0;
+}
+
+.card .foundation
+{
+	border-radius: 0.25rem;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.22);
+	height: 0;
+	padding: 0 0 150% 0;
+	position: relative;
+	width: 100%;
+}
+	.card .constraint-filler
+	{
+		overflow: hidden;
+	}
+	.card p
+	{
+		margin: 0;
+		padding: 0.5rem;
+	}
+
+.card.black .foundation
+{
+	background-color: #000;
+	color: #fff;
+}
+
+.card.white .foundation
+{
+	background-color: #fff;
+	color: #000;
+}
+
+
+
+
+
+
+
+/* This is what will allow the cards to maintain the correct aspect ratio. */
+/*.card
 {
 	border-radius: 0.25rem;
 	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.22);
@@ -40,4 +142,4 @@ body > main
 {
 	background-color: #fff;
 	color: #000;
-}
+}*/

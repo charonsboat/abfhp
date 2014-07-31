@@ -3,7 +3,7 @@
 class GameController extends BaseController {
 	/**
 	 * To access this controller, simply add the route.
-	 * E.g. Route::get('/', 'HomeController@showWelcome');
+	 * E.g. Route::get('/', 'GameController@showWelcome');
 	 */
 	public function index()
 	{
