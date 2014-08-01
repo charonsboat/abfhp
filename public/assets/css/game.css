@@ -68,17 +68,17 @@
 	}
 	.board .in-play .question
 	{
-		margin: 2.5%;
-		width: 50%;
+		margin: 1%;
+		width: 53%;
 	}
 	.board .in-play .answers
 	{
 		height: 0;
-		margin: 2.5%;
+		margin: 1%;
 		overflow: hidden;
-		padding: 0 0 75% 0;
+		padding: 0 0 79.5% 0;
 		position: relative;
-		width: 40%;
+		width: 43%;
 	}
 		.board .in-play .answers .constraint-filler
 		{
@@ -91,9 +91,9 @@
 
 .board .in-hand
 {
-	margin: 2.5%;
+	margin: 1%;
 	overflow: hidden;
-	width: 95%;
+	width: 98%;
 }
 	.board .in-hand .hand
 	{
@@ -106,7 +106,7 @@
 	{
 		display: inline-block;
 		margin: 1% 0 1% 1%;
-		width: 30%;
+		width: 35%;
 	}
 	.board .in-hand .card:last-child
 	{
