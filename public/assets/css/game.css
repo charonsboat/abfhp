@@ -6,6 +6,47 @@
 	right: 0;
 	top: 0;
 }
+	.tunnel-shadow
+	{
+		position: relative;
+	}
+	.tunnel-shadow:before, .tunnel-shadow:after
+	{
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 100%;
+		box-shadow: 0 0 0.5rem 0 #000;
+		content: '';
+		position: absolute;
+		z-index: 100;
+	}
+		.tunnel-shadow.x:before, .tunnel-shadow.x:after
+		{
+			bottom: 0;
+			top: 0;
+			width: 2%;
+		}
+		.tunnel-shadow.x:before
+		{
+			left: -1.5%;
+		}
+		.tunnel-shadow.x:after
+		{
+			right: -1.5%;
+		}
+		.tunnel-shadow.y:before, .tunnel-shadow.y:after
+		{
+			height: 2%;
+			left: 0;
+			right: 0;
+		}
+		.tunnel-shadow.y:before
+		{
+			top: -1.5%;
+		}
+		.tunnel-shadow.y:after
+		{
+			bottom: -1.5%;
+		}
 
 .board
 {
@@ -17,43 +58,59 @@
 
 .board .in-play
 {
+	overflow: hidden;
 	width: 100%;
 }
-	.board .in-play .question
+	.board .in-play .question, .board .in-play .answers
 	{
 		display: inline-block;
-		margin: 0 -4px 0 0;
 		vertical-align: top;
-		width: 55%;
+	}
+	.board .in-play .question
+	{
+		margin: 2.5%;
+		width: 50%;
 	}
 	.board .in-play .answers
 	{
-		display: inline-block;
 		height: 0;
-		margin: 0 -4px 0 0;
-		padding: 0 0 82.5% 0;
+		margin: 2.5%;
+		overflow: hidden;
+		padding: 0 0 75% 0;
 		position: relative;
-		vertical-align: top;
-		width: 45%;
+		width: 40%;
 	}
 		.board .in-play .answers .constraint-filler
 		{
 			overflow: auto;
 		}
+		.board .in-play .answers .card
+		{
+			margin: 2.5%;
+		}
 
 .board .in-hand
 {
-	min-width: 100%;
-	overflow-y: hidden;
-	overflow-x: auto;
-	position: relative;
-	white-space: nowrap;
-	width: 100%;
+	margin: 2.5%;
+	overflow: hidden;
+	width: 95%;
 }
+	.board .in-hand .hand
+	{
+		overflow-y: hidden;
+		overflow-x: auto;
+		position: relative;
+		white-space: nowrap;
+	}
 	.board .in-hand .card
 	{
 		display: inline-block;
-		width: 40%;
+		margin: 1% 0 1% 1%;
+		width: 30%;
+	}
+	.board .in-hand .card:last-child
+	{
+		margin-right: 1%;
 	}
 
 

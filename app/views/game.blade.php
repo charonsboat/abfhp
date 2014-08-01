@@ -10,8 +10,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="answers">
+		</div><!-- Fixing a [display: inline-block;] issue with white space.
+		--><div class="answers tunnel-shadow y">
 			<div class="constraint-filler">
 				<div class="card white">
 					<div class="foundation">
@@ -37,32 +37,76 @@
 			</div>
 		</div>
 	</div>
-	<div class="in-hand">
-		<div class="card white">
-			<div class="foundation">
-				<div class="contents constraint-filler">
-					<p>See former.</p>
+	<div class="in-hand tunnel-shadow x">
+		<div class="hand">
+			<div class="card white">
+				<div class="foundation">
+					<div class="contents constraint-filler">
+						<p>See former.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="card white">
-			<div class="foundation">
-				<div class="contents constraint-filler">
-					<p>See former.</p>
+			<div class="card white">
+				<div class="foundation">
+					<div class="contents constraint-filler">
+						<p>See former.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="card white">
-			<div class="foundation">
-				<div class="contents constraint-filler">
-					<p>See former.</p>
+			<div class="card white">
+				<div class="foundation">
+					<div class="contents constraint-filler">
+						<p>See former.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="card white">
-			<div class="foundation">
-				<div class="contents constraint-filler">
-					<p>See former.</p>
+			<div class="card white">
+				<div class="foundation">
+					<div class="contents constraint-filler">
+						<p>See former.</p>
+					</div>
+				</div>
+			</div>
+			<div class="card white">
+				<div class="foundation">
+					<div class="contents constraint-filler">
+						<p>See former.</p>
+					</div>
+				</div>
+			</div>
+			<div class="card white">
+				<div class="foundation">
+					<div class="contents constraint-filler">
+						<p>See former.</p>
+					</div>
+				</div>
+			</div>
+			<div class="card white">
+				<div class="foundation">
+					<div class="contents constraint-filler">
+						<p>See former.</p>
+					</div>
+				</div>
+			</div>
+			<div class="card white">
+				<div class="foundation">
+					<div class="contents constraint-filler">
+						<p>See former.</p>
+					</div>
+				</div>
+			</div>
+			<div class="card white">
+				<div class="foundation">
+					<div class="contents constraint-filler">
+						<p>See former.</p>
+					</div>
+				</div>
+			</div>
+			<div class="card white">
+				<div class="foundation">
+					<div class="contents constraint-filler">
+						<p>See former.</p>
+					</div>
 				</div>
 			</div>
 		</div>
