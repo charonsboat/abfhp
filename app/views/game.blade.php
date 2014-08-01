@@ -16,7 +16,7 @@
 				<div class="card white">
 					<div class="foundation">
 						<div class="contents constraint-filler">
-							<p>A snapping turtle biting the tip of your penis.</p>
+							<p>Armageddon.</p>
 						</div>
 					</div>
 				</div>
