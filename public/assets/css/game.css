@@ -1,3 +1,8 @@
+body > main
+{
+	padding: 0;
+}
+
 .constraint-filler
 {
 	bottom: 0;
