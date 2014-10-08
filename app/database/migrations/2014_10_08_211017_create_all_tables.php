@@ -49,6 +49,18 @@ class CreateAllTables extends Migration {
 			$table->boolean('is_czar')->default(false);
 			$table->boolean('is_active')->default(true);
 		});
+
+		Schema::create('decks', function ($table)
+		{
+			$table->increments('id');
+		});
+
+		// Now, cards is a generic name and I want to store all cards that aren't related to a game in the database
+		// as well, so maybe a better name for this would be "game_cards"? Hm...
+		Schema::create('cards', function ($table)
+		{
+
+		});
 	}
 
 	/**
