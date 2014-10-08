@@ -1,5 +1,12 @@
-# directories to ignore
+/bootstrap/compiled.php
 /vendor
-
-# files to ignore
+composer.phar
 composer.lock
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
+.sass-cache
+
+#Things to not ignore
+!.env.default.php

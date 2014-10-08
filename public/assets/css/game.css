@@ -1,0 +1,208 @@
+body > main
+{
+	padding: 0;
+}
+
+.constraint-filler
+{
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+	.tunnel-shadow
+	{
+		position: relative;
+	}
+	.tunnel-shadow:before, .tunnel-shadow:after
+	{
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 100%;
+		box-shadow: 0 0 0.5rem 0 #000;
+		content: '';
+		position: absolute;
+		z-index: 100;
+	}
+		.tunnel-shadow.x:before, .tunnel-shadow.x:after
+		{
+			bottom: 0;
+			top: 0;
+			width: 2%;
+		}
+		.tunnel-shadow.x:before
+		{
+			left: -1.5%;
+		}
+		.tunnel-shadow.x:after
+		{
+			right: -1.5%;
+		}
+		.tunnel-shadow.y:before, .tunnel-shadow.y:after
+		{
+			height: 2%;
+			left: 0;
+			right: 0;
+		}
+		.tunnel-shadow.y:before
+		{
+			top: -1.5%;
+		}
+		.tunnel-shadow.y:after
+		{
+			bottom: -1.5%;
+		}
+
+.board
+{
+	margin: auto;
+	max-width: 40rem;
+	padding: 0;
+	width: 100%;
+}
+
+.board .in-play
+{
+	overflow: hidden;
+	width: 100%;
+}
+	.board .in-play .question, .board .in-play .answers
+	{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.board .in-play .question
+	{
+		margin: 1%;
+		width: 53%;
+	}
+	.board .in-play .answers
+	{
+		height: 0;
+		margin: 1%;
+		overflow: hidden;
+		padding: 0 0 79.5% 0;
+		position: relative;
+		width: 43%;
+	}
+		.board .in-play .answers .constraint-filler
+		{
+			overflow: auto;
+		}
+		.board .in-play .answers .card
+		{
+			margin: 2.5%;
+		}
+
+.board .in-hand
+{
+	margin: 1%;
+	overflow: hidden;
+	width: 98%;
+}
+	.board .in-hand .hand
+	{
+		overflow-y: hidden;
+		overflow-x: auto;
+		position: relative;
+		white-space: nowrap;
+	}
+	.board .in-hand .card
+	{
+		display: inline-block;
+		margin: 1% 0 1% 1%;
+		width: 35%;
+	}
+	.board .in-hand .card:last-child
+	{
+		margin-right: 1%;
+	}
+
+
+
+
+
+
+
+.card
+{
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+}
+
+.card .foundation
+{
+	border-radius: 0.25rem;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.22);
+	height: 0;
+	padding: 0 0 150% 0;
+	position: relative;
+	width: 100%;
+}
+	.card .constraint-filler
+	{
+		overflow: hidden;
+	}
+	.card p
+	{
+		margin: 0;
+		padding: 0.5rem;
+	}
+
+.card.black .foundation
+{
+	background-color: #000;
+	color: #fff;
+}
+
+.card.white .foundation
+{
+	background-color: #fff;
+	color: #000;
+}
+
+
+
+
+
+
+
+/* This is what will allow the cards to maintain the correct aspect ratio. */
+/*.card
+{
+	border-radius: 0.25rem;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.22);
+	height: 0;
+	padding-bottom: 60%;
+	position: relative;
+	width: 40%;
+}
+
+.card-content-wrapper
+{
+	bottom: 0;
+	font-size: 1rem;
+	font-weight: bold;
+	left: 0;
+	padding: 0.5rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+	.card p
+	{
+		margin: 0;
+	}
+
+.black
+{
+	background-color: #000;
+	color: #fff;
+}
+
+.white
+{
+	background-color: #fff;
+	color: #000;
+}*/
